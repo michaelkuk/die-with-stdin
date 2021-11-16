@@ -24,7 +24,7 @@ npm install --save-dev die-with-stdin
 ```
 
 ### Use with Phoenix
-Edit `config/dev.exs` so the ``
+Edit `config/dev.exs`
 ```elixir
 config :your_project, YourProject.Endpoint,
   http: [port: 4000],
