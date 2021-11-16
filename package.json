@@ -2,9 +2,9 @@
   "name": "die-with-stdin",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "die-with-stdin",
   "bin": {
-    "die-with-stdin": "./index.js"
+    "die-with-stdin": "die-with-stdin"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
