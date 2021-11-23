@@ -1,6 +1,6 @@
 {
   "name": "die-with-stdin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "die-with-stdin",
   "bin": {
