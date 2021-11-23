@@ -15,7 +15,5 @@
   ],
   "author": "Michael Kuk",
   "license": "MIT",
-  "dependencies": {
-    "spawn-command": "^0.0.2-1"
-  }
+  "dependencies": {}
 }

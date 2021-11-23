@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-const spawnCommand = require('spawn-command');
+const { spawn } = require('child_process');
 
-const args = process.argv.slice(2).join(" ");
+const cmd = process.argv[2];
+const args = process.argv.slice(3);
 
-const child = spawnCommand(args);
+const child = spawn(cmd, args);
 
 child.on('exit', () => {
   process.exit();
@@ -15,5 +16,5 @@ child.stderr.pipe(process.stderr);
 
 process.stdin.on('data', () => {});
 process.stdin.once('close', () => {
-    child.kill();
+    child.kill('SIGTERM');
 });
